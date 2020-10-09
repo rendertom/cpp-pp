@@ -39,6 +39,7 @@ This extension contributes the following settings:
 
 * `cpp-pp.autoRun`: Whether to automatically execute the command line,
 * `cpp-pp.clearConsole`: Whether to clear the console before executing the command,
+* `cpp-pp.flags`: Option to define additional g++ flags,
 * `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution,
 * `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution.
 
@@ -46,7 +47,6 @@ This extension contributes the following settings:
 
 * Add support for multi-file setup,
 * Add option to use relative paths,
-* Add option to pass compiler options,
 * ...
 
 **Enjoy!**

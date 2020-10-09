@@ -51,6 +51,11 @@
                         "default": true,
                         "description": "Whether to clear the console before executing the command."
                     },
+                    "cpp-pp.flags": {
+                        "type": "string",
+                        "default": "",
+                        "description": "Additional g++ flags."
+                    },
                     "cpp-pp.saveFileBeforeExecution": {
                         "type": "boolean",
                         "default": true,
