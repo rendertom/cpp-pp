@@ -5,6 +5,8 @@ A quick way to build and run the C++ code using the GCC compiler inside VSCode.
 
 > Tip: This is a personal project that is meant to speed-up C++ coding during the Procedural Programming class at Vilnius University.
 
+![cpp-pp](resources/cpp-pp.gif)
+
 The extension is as minimal as it can be:
 * Uses GCC compiler (make sure you have it installed before using this extension),
 * Works with an active document,
