@@ -65,10 +65,6 @@
             }
         ]
     },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/rendertom/CPP-Procedurinis.git"
