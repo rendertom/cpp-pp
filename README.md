@@ -37,7 +37,6 @@ The extension can also execute the above commands on an unsaved (untitled) docum
 
 This extension contributes the following settings:
 
-* `cpp-pp.autoRun`: Whether to automatically execute the command line,
 * `cpp-pp.clearConsole`: Whether to clear the console before executing the command,
 * `cpp-pp.flags`: Option to define additional g++ flags,
 * `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution,

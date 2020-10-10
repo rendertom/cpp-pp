@@ -41,11 +41,6 @@
                 "type": "object",
                 "title": "cpp-pp",
                 "properties": {
-                    "cpp-pp.autoRun": {
-                        "type": "boolean",
-                        "default": true,
-                        "description": "Whether to automatically execute command line."
-                    },
                     "cpp-pp.clearConsole": {
                         "type": "boolean",
                         "default": true,
