@@ -44,10 +44,7 @@ This extension contributes the following settings:
 * `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution,
 * `cpp-pp.useRelativePath`: Whether to use relative paths instead of absolute.
 
-## Todo
-
-* Add support for multi-file setup,
-* ...
+---
 
 ### Similar extensions
 
