@@ -65,6 +65,11 @@
                         "type": "string",
                         "default": "~/.vscode/snippet.cpp",
                         "description": "A path to a temporary file where Untitled document gets saved prior to execution."
+                    },
+                    "cpp-pp.useRelativePath": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Whether to use relative paths instead of absolute."
                     }
                 }
             }

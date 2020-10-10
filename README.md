@@ -41,12 +41,12 @@ This extension contributes the following settings:
 * `cpp-pp.clearConsole`: Whether to clear the console before executing the command,
 * `cpp-pp.flags`: Option to define additional g++ flags,
 * `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution,
-* `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution.
+* `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution,
+* `cpp-pp.useRelativePath`: Whether to use relative paths instead of absolute.
 
 ## Todo
 
 * Add support for multi-file setup,
-* Add option to use relative paths,
 * ...
 
 **Enjoy!**
