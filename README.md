@@ -37,6 +37,7 @@ The extension can also execute the above commands on an unsaved (untitled) docum
 
 This extension contributes the following settings:
 
+* `cpp-pp.buildAll`: Whether to build all *.cpp files in current folder,
 * `cpp-pp.clearConsole`: Whether to clear the console before executing the command,
 * `cpp-pp.flags`: Option to define additional g++ flags, such as `-std=c++11`, `-Wall`, etc, separated by comma,
 * `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution,

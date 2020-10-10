@@ -41,6 +41,11 @@
                 "type": "object",
                 "title": "cpp-pp",
                 "properties": {
+                    "cpp-pp.buildAll": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Whether to build all *.cpp files in current folder."
+                    },
                     "cpp-pp.clearConsole": {
                         "type": "boolean",
                         "default": true,
