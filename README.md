@@ -33,7 +33,7 @@ The extension can also execute the above commands on an unsaved (untitled) docum
 
   - GCC compiler. For windows, use [minGW](http://www.mingw.org/).
 
-## Extension Settings
+## Extension settings
 
 This extension contributes the following settings:
 
@@ -47,5 +47,14 @@ This extension contributes the following settings:
 
 * Add support for multi-file setup,
 * ...
+
+### Similar extensions
+
+Other extensions that can execute C/C++ code:
+
+* [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner),
+* [C/C++ Compile Run](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run),
+* [cpp-compile](https://marketplace.visualstudio.com/items?itemName=tchojnacki.cpp-compile),
+* [c-cpp-compile-run-windows](https://marketplace.visualstudio.com/items?itemName=BDZNH.c-cpp-compile-run-windows),
 
 **Enjoy!**
