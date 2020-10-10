@@ -49,7 +49,7 @@
                     "cpp-pp.flags": {
                         "type": "string",
                         "default": "",
-                        "description": "Additional g++ flags."
+                        "description": "Additional g++ flags, such as -std=c++11, -Wall, etc, separated by comma."
                     },
                     "cpp-pp.saveFileBeforeExecution": {
                         "type": "boolean",
