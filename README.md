@@ -8,6 +8,7 @@ A quick way to build and run the C++ code using the GCC compiler inside VSCode.
 ![cpp-pp](resources/cpp-pp.gif)
 
 The extension is as minimal as it can be:
+
 * Uses GCC compiler (make sure you have it installed before using this extension),
 * Works with an active document,
 * Supports only a single C++ source file (multi-file setup is not supported yet).
@@ -15,12 +16,14 @@ The extension is as minimal as it can be:
 ## Installation
 
 The extension is not available through the Visual Studio Marketplace, so the only way to install it is to follow steps:
+
 1. Download the latest `vsix` file from the [releases](https://github.com/rendertom/cpp-pp/releases) section.
 2. In VSCode, use the **Install from VSIX...** command in the Extensions view (`View -> Extensions`) command drop-down, or the **Extensions: Install from VSIX...** command in the Command Palette, point to the .vsix file.
 
 ## How to use
 
 Load or type-in any valid C++ code and open Command Pallete and type one of the following:
+
 * `cpp-pp: build` to build an executable file.
 * `cpp-pp: build and run` to build and run code in the active viewer.
 * `cpp-pp: run` to execute code, that was built previously.
