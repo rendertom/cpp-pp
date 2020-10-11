@@ -7,22 +7,26 @@ A quick way to build and run the C++ code using the GCC compiler inside VSCode.
 
 ![cpp-pp](resources/cpp-pp.gif)
 
-The extension is as minimal as it can be:
+## Features
 
-* Uses GCC compiler (make sure you have it installed before using this extension),
-* Works with an active document,
-* Supports only a single C++ source file (multi-file setup is not supported yet).
+* **Build**, **Run**, or **Build and Run** in one go.
+* Works with single unsaved documents.
+* Supports MacOS (bash, zsh) and Windows (Command Prompt, Windows PowerShell).
+* Option to work with relative or absolute paths.
+* Builds file in active viewer or all `*.cpp` files in current folder.
+* Option to clear console before running new command.
+* Accepts custom build flags.
 
 ## Installation
 
-The extension is not available through the Visual Studio Marketplace, so the only way to install it is to follow steps:
+The extension is not available on the Visual Studio Marketplace, so the only way to install it is to follow these 2 steps:
 
 1. Download the latest `vsix` file from the [releases](https://github.com/rendertom/cpp-pp/releases) section.
 2. In VSCode, use the **Install from VSIX...** command in the Extensions view (`View -> Extensions`) command drop-down, or the **Extensions: Install from VSIX...** command in the Command Palette, point to the .vsix file.
 
 ## How to use
 
-Load or type-in any valid C++ code and open Command Pallete and type one of the following:
+Load or type-in any valid C++ code and open Command Pallete (`cmd + shift + P`) and type one of the following commands:
 
 * `cpp-pp: build` to build an executable file.
 * `cpp-pp: build and run` to build and run code in the active viewer.
@@ -34,9 +38,9 @@ The extension can also execute the above commands on an unsaved (untitled) docum
 
 ## Requirements
 
-  - GCC compiler. For windows, use [minGW](http://www.mingw.org/).
+  - GCC compiler. For windows, use [minGW](http://www.mingw.org/) (here's a [tutorial](https://www.youtube.com/watch?v=sXW2VLrQ3Bs) about how to install it).
 
-## Extension settings
+## Settings
 
 This extension contributes the following settings:
 
@@ -46,6 +50,10 @@ This extension contributes the following settings:
 * `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution,
 * `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution,
 * `cpp-pp.useRelativePath`: Whether to use relative paths instead of absolute.
+
+## Known issues
+
+* Extension stops working after **Kill Terminal** action or changing the **Default Shell**. Restarting VSCode should fix it.
 
 ---
 
