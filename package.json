@@ -56,6 +56,11 @@
                         "default": "",
                         "description": "Additional g++ flags, such as -std=c++11, -Wall, etc, separated by comma."
                     },
+                    "cpp-pp.preserveFocus": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "When `true` the terminal will not take focus."
+                    },
                     "cpp-pp.saveFileBeforeExecution": {
                         "type": "boolean",
                         "default": true,

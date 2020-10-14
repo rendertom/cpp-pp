@@ -47,6 +47,7 @@ This extension contributes the following settings:
 * `cpp-pp.buildAll`: Whether to build all *.cpp files in current folder,
 * `cpp-pp.clearConsole`: Whether to clear the console before executing the command,
 * `cpp-pp.flags`: Option to define additional g++ flags, such as `-std=c++11`, `-Wall`, etc, separated by comma,
+* `cpp-pp.preserveFocus`: When `true` the terminal will not take focus,
 * `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution,
 * `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution,
 * `cpp-pp.useRelativePath`: Whether to use relative paths instead of absolute.
