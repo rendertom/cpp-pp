@@ -1,0 +1,93 @@
+{
+    "name": "cpp-pp",
+    "displayName": "cpp-pp",
+    "description": "Build and run C++ code from VSCode using gcc compiler",
+    "version": "1.0.0",
+    "publisher": "renderTom",
+    "icon": "resources/icon.png",
+	"galleryBanner": {
+		"color": "#78003F",
+		"theme": "dark"
+	},
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:cpp-pp.build",
+        "onCommand:cpp-pp.buildAndRun",
+        "onCommand:cpp-pp.run"
+    ],
+    "main": "./lib/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "cpp-pp.build",
+                "title": "cpp-pp: build"
+            },
+            {
+                "command": "cpp-pp.buildAndRun",
+                "title": "cpp-pp: build and run"
+            },
+            {
+                "command": "cpp-pp.run",
+                "title": "cpp-pp: run"
+            }
+        ],
+        "configuration": [
+            {
+                "type": "object",
+                "title": "cpp-pp",
+                "properties": {
+                    "cpp-pp.buildAll": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Whether to build all *.cpp files in current folder."
+                    },
+                    "cpp-pp.clearConsole": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Whether to clear the console before executing the command."
+                    },
+                    "cpp-pp.flags": {
+                        "type": "string",
+                        "default": "",
+                        "description": "Additional g++ flags, such as -std=c++11, -Wall, etc, separated by comma."
+                    },
+                    "cpp-pp.preserveFocus": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "When `true` the terminal will not take focus."
+                    },
+                    "cpp-pp.saveFileBeforeExecution": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Whether to save dirty file before execution."
+                    },
+                    "cpp-pp.temporaryFile": {
+                        "type": "string",
+                        "default": "~/.vscode/snippet.cpp",
+                        "description": "A path to a temporary file where Untitled document gets saved prior to execution."
+                    },
+                    "cpp-pp.useRelativePath": {
+                        "type": "boolean",
+                        "default": true,
+                        "description": "Whether to use relative paths instead of absolute."
+                    }
+                }
+            }
+        ]
+    },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rendertom/CPP-Procedurinis.git"
+	},
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "eslint": "^4.11.0",
+        "vscode": "^1.1.6"
+    }
+}
