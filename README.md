@@ -1,9 +1,7 @@
 
 # Cpp-pp
 
-A quick way to build and run the C++ code using the GCC compiler inside VSCode.
-
-> Tip: This is a personal project that is meant to speed-up C++ coding during the Procedural Programming class at Vilnius University.
+Build and run the C++ code using the GCC compiler inside VSCode.
 
 ![cpp-pp](resources/cpp-pp.gif)
 
@@ -44,12 +42,12 @@ The extension can also execute the above commands on an unsaved (untitled) docum
 
 This extension contributes the following settings:
 
-* `cpp-pp.buildAll`: Whether to build all *.cpp files in current folder,
-* `cpp-pp.clearConsole`: Whether to clear the console before executing the command,
-* `cpp-pp.flags`: Option to define additional g++ flags, such as `-std=c++11`, `-Wall`, etc, separated by comma,
-* `cpp-pp.preserveFocus`: When `true` the terminal will not take focus,
-* `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution,
-* `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution,
+* `cpp-pp.buildAll`: Whether to build all *.cpp files in current folder.
+* `cpp-pp.clearConsole`: Whether to clear the console before executing the command.
+* `cpp-pp.flags`: Option to define additional g++ flags, such as `-std=c++11`, `-Wall`, etc, separated by comma.
+* `cpp-pp.preserveFocus`: When `true` the terminal will not take focus.
+* `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution.
+* `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution.
 * `cpp-pp.useRelativePath`: Whether to use relative paths instead of absolute.
 
 ---
@@ -58,9 +56,9 @@ This extension contributes the following settings:
 
 Other extensions that can execute C/C++ code:
 
-* [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner),
-* [C/C++ Compile Run](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run),
-* [cpp-compile](https://marketplace.visualstudio.com/items?itemName=tchojnacki.cpp-compile),
-* [c-cpp-compile-run-windows](https://marketplace.visualstudio.com/items?itemName=BDZNH.c-cpp-compile-run-windows),
+* [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+* [C/C++ Compile Run](https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run)
+* [cpp-compile](https://marketplace.visualstudio.com/items?itemName=tchojnacki.cpp-compile)
+* [c-cpp-compile-run-windows](https://marketplace.visualstudio.com/items?itemName=BDZNH.c-cpp-compile-run-windows)
 
 **Enjoy!**
