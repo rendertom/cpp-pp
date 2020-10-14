@@ -52,10 +52,6 @@ This extension contributes the following settings:
 * `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution,
 * `cpp-pp.useRelativePath`: Whether to use relative paths instead of absolute.
 
-## Known issues
-
-* Extension stops working after **Kill Terminal** action or changing the **Default Shell**. Restarting VSCode should fix it.
-
 ---
 
 ### Similar extensions
