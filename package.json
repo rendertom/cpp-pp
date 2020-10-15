@@ -36,6 +36,22 @@
                 "title": "cpp-pp: run"
             }
         ],
+		"menus": {
+			"editor/context": [
+				{
+                    "command": "cpp-pp.buildAndRun",
+					"group": "cpp-pp@1"
+                },
+                {
+                    "command": "cpp-pp.build",
+					"group": "cpp-pp@2"
+				},
+				{
+                    "command": "cpp-pp.run",
+					"group": "cpp-pp@3"
+				}
+			]
+		},
         "configuration": [
             {
                 "type": "object",
