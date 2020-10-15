@@ -99,6 +99,9 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/rendertom/cpp-pp.git"
+    },
+	"scripts": {
+		"package": "vsce package --githubBranch 'main'"
 	},
     "devDependencies": {
         "@types/mocha": "^2.2.42",
