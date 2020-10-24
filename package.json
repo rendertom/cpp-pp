@@ -2,7 +2,7 @@
     "name": "cpp-pp",
     "displayName": "cpp-pp",
     "description": "Build and run C++ code from VSCode using gcc compiler",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "renderTom",
     "icon": "resources/icon.png",
 	"galleryBanner": {
