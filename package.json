@@ -2,7 +2,7 @@
     "name": "cpp-pp",
     "displayName": "cpp-pp",
     "description": "Build and run C++ code from VSCode using gcc compiler",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "renderTom",
     "icon": "resources/icon.png",
 	"galleryBanner": {
@@ -36,6 +36,22 @@
                 "title": "cpp-pp: run"
             }
         ],
+		"menus": {
+			"editor/context": [
+				{
+                    "command": "cpp-pp.buildAndRun",
+					"group": "cpp-pp@1"
+                },
+                {
+                    "command": "cpp-pp.build",
+					"group": "cpp-pp@2"
+				},
+				{
+                    "command": "cpp-pp.run",
+					"group": "cpp-pp@3"
+				}
+			]
+		},
         "configuration": [
             {
                 "type": "object",
@@ -82,7 +98,10 @@
     },
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/rendertom/CPP-Procedurinis.git"
+		"url": "https://github.com/rendertom/cpp-pp.git"
+    },
+	"scripts": {
+		"package": "vsce package --githubBranch 'main'"
 	},
     "devDependencies": {
         "@types/mocha": "^2.2.42",
