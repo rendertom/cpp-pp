@@ -7,6 +7,7 @@ All notable changes to the cpp-pp extension will be documented in this file. The
 ### Added
 
 * Option to pick the C++ ISO standard to use for the compiler.
+* Option to process or skip flags.
 
 ### Changed
 
