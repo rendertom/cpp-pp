@@ -67,6 +67,37 @@
                         "default": true,
                         "description": "Whether to clear the console before executing the command."
                     },
+                    "cpp-pp.cppStandard": {
+                        "type": "string",
+                        "default": "Default",
+                        "description": "The C++ ISO standard to use for the compiler",
+                        "enum": [
+                            "Default",
+                            "c++98",
+                            "gnu++98",
+                            "c++11",
+                            "gnu++11",
+                            "c++14",
+                            "gnu++14",
+                            "c++17",
+                            "gnu++17",
+                            "c++2a",
+                            "gnu++2a"
+                        ],
+                        "enumDescriptions": [
+                            "Default C++ compiler version",
+                            "c++98 (c++03) for 'ISO C++ 1998 with amendments' standard",
+                            "gnu++98 (gnu++03) for 'ISO C++ 1998 with amendments and GNU extensions' standard",
+                            "c++11 for 'ISO C++ 2011 with amendments' standard",
+                            "gnu++11 for 'ISO C++ 2011 with amendments and GNU extensions' standard",
+                            "c++14 for 'ISO C++ 2014 with amendments' standard",
+                            "gnu++14 for 'ISO C++ 2014 with amendments and GNU extensions' standard",
+                            "c++17 for 'ISO C++ 2017 with amendments' standard",
+                            "gnu++17 for 'ISO C++ 2017 with amendments and GNU extensions' standard",
+                            "c++2a for 'Working draft for ISO C++ 2020' standard",
+                            "gnu++2a for 'Working draft for ISO C++ 2020 with GNU extensions' standard"
+                        ]
+                    },
                     "cpp-pp.flags": {
                         "type": "string",
                         "default": "",
