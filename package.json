@@ -70,7 +70,7 @@
                     "cpp-pp.cppStandard": {
                         "type": "string",
                         "default": "Default",
-                        "description": "The C++ ISO standard to use for the compiler",
+                        "description": "The C++ ISO standard to use for the compiler.",
                         "enum": [
                             "Default",
                             "c++98",
