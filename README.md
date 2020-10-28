@@ -44,7 +44,7 @@ The extension can also execute the above commands on an unsaved (untitled) docum
 
 Keyboard shortcut `shift + cmd + R` is mapped to `cpp-pp.buildAndRun` command, which will build and run the file in the active viewer. To change the command or assign a different shortcut, do the following:
 
-* Open the **Keyboard Shortcuts** editor window by clicking `cmd + K` followed by `cmd + S`, or by navigating to `Preferences > Keyboard Shortcuts`.
+* Open the **Keyboard Shortcuts** editor window by clicking `cmd + K` followed by `cmd + S`, or by navigating to `Preferences -> Keyboard Shortcuts`.
 * In the input text field start typing `cpp-pp`. This will filter all the available commands for the extension.
 * Select a command from the list and modify or assign a keybinding.
 
