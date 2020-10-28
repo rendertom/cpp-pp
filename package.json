@@ -130,6 +130,13 @@
                     }
                 }
             }
+        ],
+        "keybindings": [
+            {
+              "command": "cpp-pp.buildAndRun",
+              "key": "shift+ctrl+r",
+              "mac": "shift+cmd+r"
+            }
         ]
     },
 	"repository": {

@@ -8,6 +8,7 @@ All notable changes to the cpp-pp extension will be documented in this file. The
 
 * Option to pick the C++ ISO standard to use for the compiler.
 * Option to process or skip flags.
+* Keyboard shortcut `shift + cmd + R` to **build and run** code in the active viewer.
 
 ### Changed
 

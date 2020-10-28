@@ -30,6 +30,8 @@ Load or type-in any valid C++ code and open Command Pallete (`cmd + shift + P`) 
 * `cpp-pp: build and run` to build and run code in the active viewer.
 * `cpp-pp: run` to execute code, that was built previously.
 
+The keyboard shortcut `shift + cmd + R` is assigned to `cpp-pp: build and run` command.
+
 **Note:** in **building** process the extension will create the executable file in the same folder as the file that's in the active viewer, and will have the same name (but without extension) as the source file.
 
 The extension can also execute the above commands on an unsaved (untitled) document. In this case the *.cpp file will get saved in `~/.vscode/snippet.cpp` location (defined in Preferences) and executed from there. This feature is useful for quick test runs.
@@ -37,6 +39,17 @@ The extension can also execute the above commands on an unsaved (untitled) docum
 ## Requirements
 
   - GCC compiler. For windows, use [minGW](http://www.mingw.org/) (here's a [tutorial](https://www.youtube.com/watch?v=sXW2VLrQ3Bs) about how to install it).
+
+
+## Key bindings
+
+Keyboard shortcut `shift + cmd + R` is mapped to `cpp-pp.buildAndRun` command, which will build and run the file in the active viewer. To change the command or assign a different shortcut, do the following:
+
+* Open the **Keyboard Shortcuts** editor window by clicking `cmd + K` followed by `cmd + S`, or by navigating to `Preferences > Keyboard Shortcuts`.
+* In the input text field start typing `cpp-pp`. This will filter all the available commands for the extension.
+* Select a command from the list and modify or assign a keybinding.
+
+For more information about keybinding check official [Key Bindings for Visual Studio Code](https://code.visualstudio.com/docs/getstarted/keybindings).
 
 ## Settings
 
@@ -51,8 +64,6 @@ This extension contributes the following settings:
 * `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution.
 * `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution.
 * `cpp-pp.useRelativePath`: Whether to use relative paths instead of absolute.
-
----
 
 ### Similar extensions
 
