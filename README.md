@@ -15,6 +15,10 @@ Build and run the C++ code using the GCC compiler inside VSCode.
 * Option to clear console before running new command.
 * Accepts custom build flags.
 
+## Requirements
+
+* GCC compiler. For windows, use [minGW](http://www.mingw.org/) (here's a [tutorial](https://www.youtube.com/watch?v=sXW2VLrQ3Bs) about how to install it).
+
 ## Installation
 
 The extension is not available on the Visual Studio Marketplace, so the only way to install it is to follow these 2 steps:
@@ -35,11 +39,6 @@ The keyboard shortcut `shift + cmd + R` is assigned to `cpp-pp: build and run` c
 **Note:** in **building** process the extension will create the executable file in the same folder as the file that's in the active viewer, and will have the same name (but without extension) as the source file.
 
 The extension can also execute the above commands on an unsaved (untitled) document. In this case the *.cpp file will get saved in `~/.vscode/snippet.cpp` location (defined in Preferences) and executed from there. This feature is useful for quick test runs.
-
-## Requirements
-
-  - GCC compiler. For windows, use [minGW](http://www.mingw.org/) (here's a [tutorial](https://www.youtube.com/watch?v=sXW2VLrQ3Bs) about how to install it).
-
 
 ## Key bindings
 
