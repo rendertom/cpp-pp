@@ -101,12 +101,12 @@
                     "cpp-pp.flags": {
                         "type": "string",
                         "default": "",
-                        "markdownDescription": "Additional g++ flags, such as `-Wall`, `-Werror`, etc, separated by comma. Applies only if `Flags Enabled` is checked."
+                        "markdownDescription": "Additional g++ flags, such as `-Wall`, `-Werror`, etc, separated by comma. Applies only if `#cpp-pp.flagsEnabled#` is checked."
                     },
                     "cpp-pp.flagsEnabled": {
                         "type": "boolean",
                         "default": true,
-                        "markdownDescription": "Whether `Flags` should be processed."
+                        "markdownDescription": "Whether `#cpp-pp.flags#` should be processed."
                     },
                     "cpp-pp.preserveFocus": {
                         "type": "boolean",
