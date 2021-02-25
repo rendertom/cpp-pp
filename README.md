@@ -61,6 +61,9 @@ This extension contributes the following settings:
 * `cpp-pp.flagsEnabled`: Whether `Flags` should be processed.
 * `cpp-pp.preserveFocus`: When `true` the terminal will not take focus.
 * `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution.
+* `cpp-pp.showIconBuild`: Whether to show **build** icon in the editor menu bar.
+* `cpp-pp.showIconBuildAndRun`: Whether to show **buildAndRun** icon in the editor menu bar.
+* `cpp-pp.showIconRun`: Whether to show **run** icon in the editor menu bar.
 * `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution.
 * `cpp-pp.useConfigFile`: Whether to use `.cpp-pp.json` config file in workspace if it exists. If this option is `true` then the command will be executed from the [config file](#use-config-file), and all the internal settings will be ignored.
 * `cpp-pp.useRelativePath`: Whether to use relative paths instead of absolute.
