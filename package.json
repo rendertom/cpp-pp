@@ -123,6 +123,11 @@
                         "default": "~/.vscode/snippet.cpp",
                         "description": "A path to a temporary file where Untitled document gets saved prior to execution."
                     },
+                    "cpp-pp.useConfigFile": {
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "Whether to use `.cpp-pp.json` config file in workspace if it exists. If this option is `true` then the command will be executed from the config file, and all the internal settings will be ignored."
+                    },
                     "cpp-pp.useRelativePath": {
                         "type": "boolean",
                         "default": true,
