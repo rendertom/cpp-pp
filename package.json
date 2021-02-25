@@ -2,13 +2,13 @@
     "name": "cpp-pp",
     "displayName": "cpp-pp",
     "description": "Build and run C++ code from VSCode using gcc compiler",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "publisher": "renderTom",
     "icon": "resources/icon.png",
-	"galleryBanner": {
-		"color": "#78003F",
-		"theme": "dark"
-	},
+    "galleryBanner": {
+        "color": "#78003F",
+        "theme": "dark"
+    },
     "engines": {
         "vscode": "^1.49.0"
     },
@@ -25,33 +25,62 @@
         "commands": [
             {
                 "command": "cpp-pp.build",
-                "title": "cpp-pp: build"
+                "title": "cpp-pp: build",
+                "icon": {
+                    "light": "resources/icons/icojam/dark/021_004_spider_danger_halloween_poison.svg",
+                    "dark": "resources/icons/icojam/light/021_004_spider_danger_halloween_poison.svg"
+                }
             },
             {
                 "command": "cpp-pp.buildAndRun",
-                "title": "cpp-pp: build and run"
+                "title": "cpp-pp: build and run",
+                "icon": {
+                    "light": "resources/icons/icojam/dark/021_006_witch_broom_halloween_flying.svg",
+                    "dark": "resources/icons/icojam/light/021_006_witch_broom_halloween_flying.svg"
+                }
             },
             {
                 "command": "cpp-pp.run",
-                "title": "cpp-pp: run"
+                "title": "cpp-pp: run",
+                "icon": {
+                    "light": "resources/icons/icojam/dark/021_024_ghost_halloween_phantom_casper.svg",
+                    "dark": "resources/icons/icojam/light/021_024_ghost_halloween_phantom_casper.svg"
+                }
             }
         ],
-		"menus": {
-			"editor/context": [
-				{
+        "menus": {
+            "editor/context": [
+                {
                     "command": "cpp-pp.buildAndRun",
-					"group": "cpp-pp@1"
+                    "group": "cpp-pp@1"
                 },
                 {
                     "command": "cpp-pp.build",
-					"group": "cpp-pp@2"
-				},
-				{
+                    "group": "cpp-pp@2"
+                },
+                {
                     "command": "cpp-pp.run",
-					"group": "cpp-pp@3"
-				}
-			]
-		},
+                    "group": "cpp-pp@3"
+                }
+            ],
+            "editor/title": [
+                {
+                    "command": "cpp-pp.build",
+                    "group": "navigation@cpp-pp",
+                    "when": "config.cpp-pp.showIconBuild"
+                },
+                {
+                    "command": "cpp-pp.buildAndRun",
+                    "group": "navigation@cpp-pp",
+                    "when": "config.cpp-pp.showIconBuildAndRun"
+                },
+                {
+                    "command": "cpp-pp.run",
+                    "group": "navigation@cpp-pp",
+                    "when": "config.cpp-pp.showIconRun"
+                }
+            ]
+        },
         "configuration": [
             {
                 "type": "object",
@@ -118,10 +147,30 @@
                         "default": true,
                         "description": "Whether to save dirty file before execution."
                     },
+                    "cpp-pp.showIconBuild": {
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "Whether to show **build** icon in the editor menu bar."
+                    },
+                    "cpp-pp.showIconBuildAndRun": {
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "Whether to show **buildAndRun** icon in the editor menu bar."
+                    },
+                    "cpp-pp.showIconRun": {
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "Whether to show **run** icon in the editor menu bar."
+                    },
                     "cpp-pp.temporaryFile": {
                         "type": "string",
                         "default": "~/.vscode/snippet.cpp",
                         "description": "A path to a temporary file where Untitled document gets saved prior to execution."
+                    },
+                    "cpp-pp.useConfigFile": {
+                        "type": "boolean",
+                        "default": true,
+                        "markdownDescription": "Whether to use `.cpp-pp.json` config file in workspace if it exists. If this option is `true` then the command will be executed from the config file, and all the internal settings will be ignored."
                     },
                     "cpp-pp.useRelativePath": {
                         "type": "boolean",
@@ -133,23 +182,24 @@
         ],
         "keybindings": [
             {
-              "command": "cpp-pp.buildAndRun",
-              "key": "shift+ctrl+r",
-              "mac": "shift+cmd+r"
+                "command": "cpp-pp.buildAndRun",
+                "key": "shift+ctrl+r",
+                "mac": "shift+cmd+r"
             }
         ]
     },
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/rendertom/cpp-pp.git"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rendertom/cpp-pp.git"
     },
-	"scripts": {
-		"package": "vsce package --githubBranch 'main'"
-	},
+    "scripts": {
+        "package": "vsce package --githubBranch 'main'"
+    },
     "devDependencies": {
         "@types/mocha": "^2.2.42",
         "@types/node": "^7.0.43",
         "eslint": "^4.11.0",
+        "vsce": "^1.85.0",
         "vscode": "^1.1.6"
     }
 }

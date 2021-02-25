@@ -22,6 +22,15 @@ All notable changes to the cpp-pp extension will be documented in this file. The
 
 ---
 
+## [1.3.0] 2021-02-25
+
+### Added
+
+* Icons for the editor menu bar.
+* Option to use `.cpp-pp.json` config file in a workspace.
+
+---
+
 ## [1.2.0] 2020-10-28
 
 ### Added
