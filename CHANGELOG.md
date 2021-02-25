@@ -6,7 +6,8 @@ All notable changes to the cpp-pp extension will be documented in this file. The
 
 ### Added
 
-* 
+* Icons for editor menu bar.
+* Option to use `.cpp-pp.json` config file in a workspace.
 
 ### Changed
 
