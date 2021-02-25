@@ -62,7 +62,33 @@ This extension contributes the following settings:
 * `cpp-pp.preserveFocus`: When `true` the terminal will not take focus.
 * `cpp-pp.saveFileBeforeExecution`: Whether to save a dirty file before execution.
 * `cpp-pp.temporaryFile`: A path to a temporary file where Untitled document gets saved before execution.
+* `cpp-pp.useConfigFile`: Whether to use `.cpp-pp.json` config file in workspace if it exists. If this option is `true` then the command will be executed from the [config file](#use-config-file), and all the internal settings will be ignored.
 * `cpp-pp.useRelativePath`: Whether to use relative paths instead of absolute.
+
+## Use config file
+
+The extension allows command execution from the `.cpp-pp.json` config file, that lives in a workspace. If such file exists, and it contains a command you are about to execute, then all the internal extension settings will be ignored, and the code from the `.cpp-pp.json` will be executed instead.
+
+This is usefull when you need to use a custom command to be executed, rather then the one that extension generates. For instance, compiling and building external libraries, that are used in your codebase.
+
+To make use of it, create a `.cpp-pp.json` file in your workspace and define following properties:
+
+```json
+{
+  "build": ["first command", "first second"],
+  "buildAndRun": ["first command", "first second"],
+  "run": ["first command", "first second"],
+}
+
+```
+
+**Example:** on `cpp-pp: build and run` command compile all the `*.cpp` files inside `./include/` folder (including `main.cpp`) and execute `./main` binary file. The contens of `.cpp-pp.json` file could be as follows:
+
+```json
+{
+  "buildAndRun": ["g++ -std=c++11 ./include/*.cpp 'main.cpp' -o 'main'", "./main"]
+}
+```
 
 ### Similar extensions
 
