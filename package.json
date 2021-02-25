@@ -25,15 +25,27 @@
         "commands": [
             {
                 "command": "cpp-pp.build",
-                "title": "cpp-pp: build"
+                "title": "cpp-pp: build",
+				"icon": {
+					"light": "resources/icons/icojam/dark/021_004_spider_danger_halloween_poison.svg",
+					"dark": "resources/icons/icojam/light/021_004_spider_danger_halloween_poison.svg"
+				}
             },
             {
                 "command": "cpp-pp.buildAndRun",
-                "title": "cpp-pp: build and run"
+                "title": "cpp-pp: build and run",
+				"icon": {
+					"light": "resources/icons/icojam/dark/021_006_witch_broom_halloween_flying.svg",
+					"dark": "resources/icons/icojam/light/021_006_witch_broom_halloween_flying.svg"
+				}
             },
             {
                 "command": "cpp-pp.run",
-                "title": "cpp-pp: run"
+                "title": "cpp-pp: run",
+				"icon": {
+					"light": "resources/icons/icojam/dark/021_024_ghost_halloween_phantom_casper.svg",
+					"dark": "resources/icons/icojam/light/021_024_ghost_halloween_phantom_casper.svg"
+				}
             }
         ],
 		"menus": {
@@ -50,7 +62,24 @@
                     "command": "cpp-pp.run",
 					"group": "cpp-pp@3"
 				}
-			]
+			],
+			"editor/title": [
+				{
+					"command": "cpp-pp.build",
+					"group": "navigation@cpp-pp",
+                    "when": "config.cpp-pp.showIconBuild"
+				},
+                {
+					"command": "cpp-pp.buildAndRun",
+					"group": "navigation@cpp-pp",
+                    "when": "config.cpp-pp.showIconBuildAndRun"
+				},
+				{
+					"command": "cpp-pp.run",
+					"group": "navigation@cpp-pp",
+                    "when": "config.cpp-pp.showIconRun"
+				}
+            ]
 		},
         "configuration": [
             {
@@ -117,6 +146,21 @@
                         "type": "boolean",
                         "default": true,
                         "description": "Whether to save dirty file before execution."
+                    },
+                    "cpp-pp.showIconBuild": {
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "Whether to show **build** icon in the editor menu bar."
+                    },
+                    "cpp-pp.showIconBuildAndRun": {
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "Whether to show **buildAndRun** icon in the editor menu bar."
+                    },
+                    "cpp-pp.showIconRun": {
+                        "type": "boolean",
+                        "default": false,
+                        "markdownDescription": "Whether to show **run** icon in the editor menu bar."
                     },
                     "cpp-pp.temporaryFile": {
                         "type": "string",
